@@ -1,5 +1,6 @@
 
 import './App.css'
+import Loginscreen from './components/loginscreen/loginscreen';
 import Splashscreen from './components/splash screen'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
      <Splashscreen/>
+     <Loginscreen/>
     </>
   )
 }
