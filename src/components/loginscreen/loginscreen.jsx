@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Loginscreen.css";
 
 const Loginscreen = () => {
+  const navigate = useNavigate();
+
+  const handleSkip = () => {
+    navigate('/home'); // User ko '/home' route par redirect karega
+  };
+
   return (
     <div className="login-screen-container">
       <div className="h-[10%] w-full flex items-center px-15 text-3xl bg-black absolute top-0 text-white">
@@ -18,6 +25,7 @@ const Loginscreen = () => {
         <div className="divider">
           <span>or</span>
         </div>
+        
         <button className="social-btn">
           <img
             src="https://www.google.com/favicon.ico"
@@ -34,9 +42,13 @@ const Loginscreen = () => {
           />
           Continue with Apple
         </button>
+        
         <div className="divider">
           <span>or</span>
         </div>
+        <button className="social-btn" onClick={handleSkip}>
+          Skip
+        </button>
         <p className="consent-text">
           By proceeding, you consent to get calls, WhatsApp or SMS/RCS messages,
           including by automated means, from frapp and its affiliates to the
