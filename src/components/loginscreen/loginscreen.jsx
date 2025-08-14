@@ -1,9 +1,12 @@
-import React from 'react';
-import './Loginscreen.css';
+import React from "react";
+import "./Loginscreen.css";
 
 const Loginscreen = () => {
   return (
     <div className="login-screen-container">
+      <div className="h-[10%] w-full flex items-center px-15 text-3xl bg-black absolute top-0 text-white">
+        Frapp Eats
+      </div>
       <div className="login-section">
         <h2>What's your phone number or email?</h2>
         <input
