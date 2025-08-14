@@ -36,7 +36,7 @@ const Loginscreen = () => {
         </div>
         <p className="consent-text">
           By proceeding, you consent to get calls, WhatsApp or SMS/RCS messages,
-          including by automated means, from Uber and its affiliates to the
+          including by automated means, from frapp and its affiliates to the
           number provided.
         </p>
       </div>
